@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "58324776442",
+    "firebase_url": "https://fir-dev-270ba.firebaseio.com",
+    "project_id": "fir-dev-270ba",
+    "storage_bucket": "fir-dev-270ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58324776442:android:d23c153cde591f93fce043",
+        "android_client_info": {
+          "package_name": "com.tenondelab.firebaseandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58324776442-8kl1dh8c99e3g1hug2rosf13v0b3uttf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk2YU7Ly0fUDe1m28b1qIyKt5hmLpOM94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58324776442-8kl1dh8c99e3g1hug2rosf13v0b3uttf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
