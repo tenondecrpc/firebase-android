@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Firebase Android</string>
+    <string name="prefs_file">com.tenondelab.firebaseandroid.PREFERENCE_FILE_KEY</string>
 </resources>
