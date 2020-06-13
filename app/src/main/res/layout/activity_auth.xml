@@ -71,6 +71,19 @@
             android:text="Google"
             android:textAlignment="textStart"
             android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/facebookButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:height="50dp"
+            android:background="@android:color/white"
+            android:drawableStart="@mipmap/ic_facebook"
+            android:paddingLeft="10dp"
+            android:text="Facebook"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
