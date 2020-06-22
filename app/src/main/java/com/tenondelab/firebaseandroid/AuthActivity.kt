@@ -19,6 +19,8 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_auth.*
 
 class AuthActivity : AppCompatActivity() {
@@ -38,6 +40,7 @@ class AuthActivity : AppCompatActivity() {
         analytics.logEvent("app_init", bundle)
 
         // Setup
+        notification()
         setup()
         session()
     }
@@ -55,6 +58,23 @@ class AuthActivity : AppCompatActivity() {
         if (email != null && provider != null) {
             authLayout.visibility = View.INVISIBLE
             showHome(email, ProviderType.valueOf(provider))
+        }
+    }
+
+    private fun notification() {
+        FirebaseInstanceId.getInstance().instanceId.addOnCompleteListener {
+            it.result?.token?.let {
+                println("This is the device token: $it")
+            }
+        }
+
+        // Topics
+        FirebaseMessaging.getInstance().subscribeToTopic("firebaseandroid")
+
+        // Params
+        val url = intent.getStringExtra("url")
+        url?.let {
+            println("Info in push ${it}")
         }
     }
 
